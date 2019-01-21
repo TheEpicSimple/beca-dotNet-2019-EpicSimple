@@ -10,8 +10,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Saludos viajero.");
-            Console.ReadLine();
+            Console.WriteLine("Saludos viajero humano.");
         }
     }
 }
