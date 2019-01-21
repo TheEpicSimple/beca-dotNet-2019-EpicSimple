@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{34A9FBB5-0FAB-4D2B-8EDA-CE0AEE185317}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessCoreDLL", "BussinessCoreDLL\BussinessCoreDLL.csproj", "{D6EE570A-22B4-4879-8F6B-DEC960A4B94C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34A9FBB5-0FAB-4D2B-8EDA-CE0AEE185317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34A9FBB5-0FAB-4D2B-8EDA-CE0AEE185317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34A9FBB5-0FAB-4D2B-8EDA-CE0AEE185317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34A9FBB5-0FAB-4D2B-8EDA-CE0AEE185317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6EE570A-22B4-4879-8F6B-DEC960A4B94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6EE570A-22B4-4879-8F6B-DEC960A4B94C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6EE570A-22B4-4879-8F6B-DEC960A4B94C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6EE570A-22B4-4879-8F6B-DEC960A4B94C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
