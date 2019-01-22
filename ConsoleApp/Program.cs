@@ -10,7 +10,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // Saludo tradicional marciano
+            // Saludo tradicional mio
             Console.WriteLine("Saludos viajero humano.");
         }
     }
