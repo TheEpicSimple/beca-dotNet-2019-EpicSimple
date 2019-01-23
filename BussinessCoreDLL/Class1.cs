@@ -13,19 +13,22 @@ namespace BussinessCoreDLL
         public class Chasis
         {
             public string model;
+            public byte wheelSockets;
 
             public float[] dimensions;
 
             public Chasis()
             {
                 model = "standart";
+                wheelSockets = 4;
 
                 dimensions = new float[] { 2.0f, 4.5f, 1.6f };
             }
 
-            public Chasis(string model, float[] dimensions)
+            public Chasis(string model, byte wheelSockets, float[] dimensions)
             {
                 this.model = model;
+                this.wheelSockets = wheelSockets;
                 this.dimensions = dimensions;
             }
         }
@@ -61,28 +64,31 @@ namespace BussinessCoreDLL
             public string model;
              
             public string motor;
-            public string tires;
+            public byte doorNumber;
+            public string[] tires;
             public Chasis chasis;
             public Carriage carriage;
              
-            public uint price; //price in cents
+            public ulong price; //price in cents
 
             Vehicle()
             {
                 vehicleType = VehicleType.tourism;
                 model = "standart";
                 motor = "standart";
+                doorNumber = 4;
                 chasis = new Chasis();
                 carriage = new Carriage();
 
                 price = 200000;
             }
 
-            public Vehicle(VehicleType vehicleType, string model, string motor, string tires, Chasis chasis, Carriage carriage, uint price)
+            public Vehicle(VehicleType vehicleType, string model, string motor, byte doorNumber, string[] tires, Chasis chasis, Carriage carriage, ulong price)
             {
                 this.vehicleType = vehicleType;
                 this.model = model;
                 this.motor = motor;
+                this.doorNumber = doorNumber;
                 this.tires = tires;
                 this.chasis = chasis;
                 this.carriage = carriage;
