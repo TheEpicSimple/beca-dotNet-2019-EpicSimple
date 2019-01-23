@@ -22,6 +22,12 @@ namespace BussinessCoreDLL
 
                 dimensions = new float[] { 2.0f, 4.5f, 1.6f };
             }
+
+            public Chasis(string model, float[] dimensions)
+            {
+                this.model = model;
+                this.dimensions = dimensions;
+            }
         }
 
         public class Carriage
@@ -39,6 +45,13 @@ namespace BussinessCoreDLL
                 hexcolor = 0x0;
 
                 dimensions = new float[]{ 2.0f, 4.5f, 1.6f };
+            }
+
+            public Carriage(string model, uint hexcolor, float[] dimensions)
+            {
+                this.model = model;
+                this.hexcolor = hexcolor;
+                this.dimensions = dimensions;
             }
         }
 
@@ -63,6 +76,17 @@ namespace BussinessCoreDLL
                 carriage = new Carriage();
 
                 price = 200000;
+            }
+
+            public Vehicle(VehicleType vehicleType, string model, string motor, string tires, Chasis chasis, Carriage carriage, uint price)
+            {
+                this.vehicleType = vehicleType;
+                this.model = model;
+                this.motor = motor;
+                this.tires = tires;
+                this.chasis = chasis;
+                this.carriage = carriage;
+                this.price = price;
             }
         }
     }
