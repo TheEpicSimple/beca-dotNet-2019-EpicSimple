@@ -8,7 +8,7 @@ namespace BussinessCoreDLL
 {
     public class Vehicle
     {
-        public VehicleKind vehicleType;
+        public VehicleKind vehicleKind;
         public string model;
 
         public string engine;
@@ -20,7 +20,7 @@ namespace BussinessCoreDLL
 
         public Vehicle()
         {
-            this.vehicleType = VehicleKind.tourism;
+            this.vehicleKind = VehicleKind.tourism;
             this.model = "standart";
             this.engine = "standart";
             this.chasis = new Chasis();
@@ -28,10 +28,10 @@ namespace BussinessCoreDLL
             this.priceEuroCents = 200000;
         }
 
-        public Vehicle(VehicleKind vehicleType, string model, string engine, string[] tires,
+        public Vehicle(VehicleKind vehicleKind, string model, string engine, string[] tires,
             Chasis chasis, Carriage carriage, ulong priceEuroCents)
         {
-            this.vehicleType = vehicleType;
+            this.vehicleKind = vehicleKind;
             this.model = model;
             this.engine = engine;
             this.tires = tires;
