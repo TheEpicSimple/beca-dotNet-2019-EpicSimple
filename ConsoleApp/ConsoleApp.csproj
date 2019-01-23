@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BussinessCoreDLL\BussinessCoreDLL.csproj">
+      <Project>{d6ee570a-22b4-4879-8f6b-dec960a4b94c}</Project>
+      <Name>BussinessCoreDLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
